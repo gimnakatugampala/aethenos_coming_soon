@@ -5,6 +5,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+   
+    
 }
 .container{
     display: flex;
@@ -14,6 +16,7 @@
     height: 100vh;
     width: 100%;
     overflow: scroll;
+    overflow-x: hidden !important;
 }
 .container .image{
     position: absolute;
@@ -105,9 +108,10 @@
     height: 400px;
     display: flex;
     justify-content: center;
-    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    opacity: 0.95;
     border-radius: 15px;
-    background: rgba(255, 255, 255, 0.1);
+    background: #413e3e;
+    border: 1px solid #fff;
     backdrop-filter: blur(10px);
     flex-wrap: wrap;
 }
@@ -126,7 +130,7 @@
     border-bottom: 2px solid #5f5d5d;
 }
 .contect-page form input::placeholder{
-    color: #000;
+    color: #fff;
 }
 .contect-page form #lastName,
 .contect-page form #phone{
@@ -147,9 +151,12 @@
     min-height: 80px;
     max-height: 80px;
 }
+.contect-page form textarea::placeholder{
+    color: #fff;
+}
 .contect-page form #button{
     border: none;
-    background: #fff;
+    background: #706767;
     border-radius: 5px;
     margin-top: 20px;
     font-weight: 600;
