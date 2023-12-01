@@ -31,20 +31,21 @@
             <section>
                 <div class="contect-page">
                     <h1>Contact Us</h1>
-                    <form>
+                    <form onsubmit="sendEmail(); reset(); return false;" >
                         
                         <input type="text" id="firstName" placeholder="First Name" required/>
                         <input type="text" id="lastName" placeholder="Last Name" required/>
                         <input type="email" id="email" placeholder="Email" required/>
                         <input type="number" id="phone" placeholder="Mobile Number" required/>
                         <h4>Type Your Message Here....</h4>
-                        <textarea placeholder="Message" required></textarea>
+                        <textarea placeholder="Message" id="message" required></textarea>
                         <input type="submit" id="button" value="Send">
                     </form>
                 </div>
             </section>
     </section>
     
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/javasript.js"></script>
 </body>
 </html>
